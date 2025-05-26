@@ -1,12 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import MainTitles from '../components/titles/MainTitles'
+import SubTItles from '../components/titles/SubTItles'
+import Background from '../components/bg-colorPage/backGround'
 
 function Homepage() {
   return (
-    <div>
-        <h1 className={'justify-center'}>Homepage</h1>
-        <Link to={'/todos'}>ToDO List</Link>
-        <Link to={'/users'} >User List</Link>
+    <div >
+        <Background>
+        <MainTitles title={'home page'}/>
+        <div className='flex justify-center'>
+        <Link to={'/todos'}>{<SubTItles title={'ToDO List'}/>}</Link>
+        <Link to={'/users'} >{<SubTItles title={'User List'}/>}</Link>
+        </div>
+        </Background>
     </div>
   )
 }

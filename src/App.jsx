@@ -1,9 +1,10 @@
 
 
 import { Route, Routes } from 'react-router-dom'
-import ToDoList from './featuers/todo/ToDoList'
-import UserList from './featuers/users/UserList'
+import ToDoList from './pages/ToDoList'
+import UserList from './pages/UserList'
 import Homepage from './pages/Homepage'
+import UserTask from './pages/UserTask'
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
         <Route path={'/'} element={<Homepage/>}/>
         <Route path={'/todos'} element={<ToDoList/>}/>
         <Route path={'/users'} element={<UserList/>}/>
+        <Route path={'/users/:userId/tasks'} element={<UserTask/>}/>
+
         </Routes>
       </div>
     </>
