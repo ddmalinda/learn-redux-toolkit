@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+<div>
     {/* View your app in the Provider */}
     {/* The store we defined earlier */}
     <BrowserRouter>
@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <App />
       </Provider>
     </BrowserRouter>
-  </React.StrictMode>
+  </div>
 );
 
 

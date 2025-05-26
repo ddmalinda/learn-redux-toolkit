@@ -18,7 +18,7 @@ export default function UserList() {
     }, [dispatch])
     return (
         <Background>
-            <BackButton path={'/'}/>
+            <BackButton path={'/'} name={'Back HomePage'}/>
         <div className='mx-auto grid justify-around '>
            <MainTitles title={'User List'}/>
             {loading === 'loading' ? "loading...." :

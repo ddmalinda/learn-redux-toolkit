@@ -39,10 +39,10 @@ export default function ToDoList() {
     return (
         <div className="min-h-screen flex justify-around top  bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500">
             <div className="mx-auto min-h-full items-center w-4xl mt-5 rounded-2xl bg-amber-50">
-                <BackButton path={'/'}/>
+                <BackButton path={'/'} name={'Back HomePage'}/>
                 <div className="mx-auto flex-row max-w-max items-center  ">
                     <div>
-                        <MainTitles title={'TOdo list'} />
+                        <MainTitles title={'TOdo list'} name={'Back HomePage'} />
                     </div>
                     <div className="flex justify-center items-center mt-5 mb-5">
                         <input

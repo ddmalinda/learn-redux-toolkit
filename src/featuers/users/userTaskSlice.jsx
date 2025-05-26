@@ -32,5 +32,5 @@ const userTaskSlice = createSlice({
             state.usertaskFechingError = action.error.message;
         });
 }
-
 })
+export default userTaskSlice.reducer;

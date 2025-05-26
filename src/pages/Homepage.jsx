@@ -8,7 +8,7 @@ function Homepage() {
   return (
     <div >
         <Background>
-        <MainTitles title={'home page'}/>
+        <MainTitles title={'home page'} className='mt-5'/>
         <div className='flex justify-center'>
         <Link to={'/todos'}>{<SubTItles title={'ToDO List'}/>}</Link>
         <Link to={'/users'} >{<SubTItles title={'User List'}/>}</Link>
